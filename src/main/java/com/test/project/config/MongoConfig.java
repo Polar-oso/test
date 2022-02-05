@@ -12,7 +12,7 @@ public class MongoConfig
 {
    public @Bean MongoClient mongoClient()
    {
-       return MongoClients.create("mongodb://localhost:27017");
+       return MongoClients.create("mongodb+srv://cole:cole@cluster0.zc89r.mongodb.net/test?retryWrites=true&w=majority");
    }
 
    public @Bean MongoTemplate mongoTemplate()
