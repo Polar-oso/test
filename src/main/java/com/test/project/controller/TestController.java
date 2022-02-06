@@ -1,4 +1,4 @@
-package com.test.project;
+package com.test.project.controller;
 
 import com.test.project.repository.ProductRepository;
 
@@ -21,7 +21,7 @@ public class TestController
     @GetMapping("/test")
     public String test(Model model)
     {
-        model.addAttribute("tester", productRepository.findAll());
+        model.addAttribute("tester", productRepository.find("thermos"));
         return "test";
     }
 }
